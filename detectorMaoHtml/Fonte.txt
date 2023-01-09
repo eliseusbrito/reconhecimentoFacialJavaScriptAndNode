@@ -1,0 +1,10 @@
+https://medium.com/ds4data/acessibilidade-parte-3-detec%C3%A7%C3%A3o-de-m%C3%A3os-em-imagens-e-v%C3%ADdeos-9eba76c7f80e
+
+https://github.com/LucaswasTaken/Acessibilidade_Parte_3_Angulo_dedos
+
+
+Neste artigo usou as seguintes referencias
+https://medium.com/ds4data/acessibilidade-parte-1-an%C3%A1lise-de-sentimentos-em-textos-fbf6f4de9918
+https://github.com/andypotato/fingerpose
+https://github.com/andypotato/fingerpose#how-it-works
+https://github.com/andypotato/fingerpose/blob/master/dist/index.html

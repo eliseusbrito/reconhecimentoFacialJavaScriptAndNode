@@ -1,0 +1,9 @@
+https://alexandreaquiles.com.br/2016/09/01/tirando-fotos-com-js/
+
+https://jsfiddle.net/alexandreaquiles/xqhLL2wm/1/
+
+
+
+index.html: simula tirar a foto mas não salva e camera continua rodando
+
+fixafoto.html: quando aperta o botao de tirar a foto trava o video e também não salva a foto.

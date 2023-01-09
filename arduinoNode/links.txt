@@ -1,0 +1,26 @@
+Video Base
+Arduino, Node.js e JavaScript: Como ligar e desligar dispositivos pela porta serial
+https://www.youtube.com/watch?v=P3iartBee34
+
+
+
+
+
+
+Parte que faz a leitura no arduino, js que envia dados para o front e o front
+npm install serialpart
+npm install express
+npm install socket.io
+Tutorial Arduino e Node.js (parte 1 até 3)
+https://www.youtube.com/watch?v=LNtmLapUSzw
+https://www.youtube.com/watch?v=ewMkFQ6surQ
+https://www.youtube.com/watch?v=d_SoD0iE54Y
+https://www.youtube.com/watch?v=LIiWUhO3PL0&list=PLjk5BbeehU9E2ejwOXsTURvSSI74OC9AX
+
+
+https://github.com/serialport/node-serialport
+
+
+Aplicação que coloca som ao tirar a foto
+Node.js Webcam Easy JS Library to Take Photos From Webcam in Browser Using Javascript Full App
+https://www.youtube.com/watch?v=tMs-6xnezqk

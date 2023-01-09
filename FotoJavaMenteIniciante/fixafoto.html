@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .camera {
+            width: 340px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5em;
+        }
+
+        .foto {
+            width: 320px;
+            height: 240px;
+            border: 1px solid black;
+            margin: 1em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="camera">
+        <video id="video" class="foto" autoplay>Vídeo não disponível.</video>
+        <canvas id="canvas" class="foto" style="display: none;"></canvas>
+        <button id="tira-foto">Tirar foto</button>
+    </div>
+
+    <script>
+        var video = document.querySelector('#video');
+
+        var getUserMedia = (navigator.webkitGetUserMedia ||
+            navigator.mozGetUserMedia ||
+            navigator.msGetUserMedia).bind(navigator);
+
+        var mediaStream;
+        function iniciaVideo(stream) {
+            video.srcObject = stream;
+            mediaStream = stream;
+        }
+
+        function trataErroMedia(erro) {
+            console.error('Erro: ' + erro);
+        }
+
+        var configuracaoMedia = { video: true, audio: false };
+
+        getUserMedia(configuracaoMedia, iniciaVideo, trataErroMedia);
+
+        var canvas = document.querySelector('#canvas');
+        canvas.width = 320;
+        canvas.height = 240;
+
+        var botaoTiraFoto = document.querySelector('#tira-foto');
+        botaoTiraFoto.addEventListener('click', function (e) {
+            canvas.getContext('2d').drawImage(video, 0, 0, 320, 240);
+            var dados = canvas.toDataURL('image/png');
+            //fazer algo com os dados...
+            video.style.display = 'none';
+            canvas.style.display = '';
+        });
+
+    </script>
+</body>
+
+</html>
