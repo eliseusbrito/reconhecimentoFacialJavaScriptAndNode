@@ -1,0 +1,16 @@
+{
+  "name": "FaceApiAzureNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "face-detection.js",
+  "scripts": {
+    "dev": "node src/face-detection.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "request": "^2.88.2"
+  }
+}
